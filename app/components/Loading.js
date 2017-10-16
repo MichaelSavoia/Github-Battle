@@ -1,17 +1,20 @@
-var React = require('react');
-var PropTypes = require('prop-types');
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Loading extends React.Component {
+class Loading extends Component {
   render() {
     return (
-      <div className="row" style={{margin: '100px auto'}}>
+      <div className="row" style={{ margin: '100px auto' }}>
         <div className="loader-wrapper">
-          <i className="loader fa fa-spinner fa-pulse fa-fw" style={{fontSize: '100px'}}></i>
+          <i
+            className="loader fa fa-spinner fa-pulse fa-fw"
+            style={{ fontSize: '100px' }}
+          />
           <span className="sr-only">Loading...</span>
         </div>
       </div>
-    )
+    );
   }
 }
 
-module.exports = Loading;
+export default Loading;
